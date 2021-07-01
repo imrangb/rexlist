@@ -1,0 +1,275 @@
+/* default css*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'lilita', sans-serif;
+    
+    font-weight: 700;
+}
+
+
+.clearfix:before, 
+.clearfix:after{
+    display: table;
+    content:"";
+    clear:both;
+}
+.floatleft{
+    float:left;
+}
+.floatright{
+    float:right;
+}
+.section-padding-top {
+    padding-top: 80px;
+}
+
+.section-padding-bottom{
+    padding-bottom: 80px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    color: #6928D9;
+    font-weight: 700;
+}
+
+
+.section-title h3 {
+    font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 700;
+    color: #060630;
+}
+
+
+/* default css end */
+
+.logo {
+    padding: 7px 0;
+}
+
+.header-top-area {
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+    color: #fff;
+    z-index: 1;
+}
+
+.home-area{
+    background-image: url(../images/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 730px;
+    display: table;
+    width: 100%;
+    position: relative;
+
+}
+
+.header-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.aughtor-images img {
+    width: 100%;
+    height: 600PX;
+}
+.home-content {
+    color: #ffff;
+    margin-top: 30px;
+    
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 86px;
+}
+
+.home-content h2 {
+    font-size: 60px;
+}
+.aughtor-images {
+    position: absolute;
+    right: 0;
+    bottom: -203px;
+}
+
+
+.single-contant h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #060630;
+}
+
+.single-contant i {
+    display: inline-block;
+    padding: 20px 25px;
+    background: #6928D9;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.single-contant h6 {
+    text-transform: uppercase;
+    color: #A8ABB9;
+}
+
+
+/* about-us-area */
+
+.about-image img {
+    width: 100%;
+}
+.single-skill {
+    width: 50%;
+    padding: 15px;
+}
+/* about-us-area end */
+
+/* our-expert-area css */
+
+.our-expert-area .section-title {
+    margin-bottom: 100px;
+}
+.expert-icon {
+    position: relative;
+}
+
+.expert-icon:before {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #16FFDB;
+    content: "";
+}
+
+.single-expert i {
+    font-size: 36px;
+    color: #6928D9;
+    margin-left: 20px;
+}
+
+.single-expert p:first-child {
+    color: #f10000;
+}
+
+
+.single-expert p {
+    color: #9DA1B0;
+}
+
+.single-expert, .single-expert-2, .single-expert-padding {
+    padding: 20px;
+    position: relative;
+}
+
+.single-expert:before, .single-expert:after {
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 0;
+    width: 70px;
+    height: 7px;
+    background: #16FFDB;
+    
+    opacity: 0;
+    visibility:hidden;
+    transition:.5s;
+}
+
+
+.single-expert:after {
+    left: auto;
+    right: 0;
+    height: 70px;
+    width: 7px;
+    top: auto;
+    bottom: 0;
+    
+    opacity: 0;
+    visibility:hidden;
+    transition:.5s;
+}
+
+
+.single-expert-padding:before, .single-expert-padding:after {
+    position: absolute;
+    content: "";
+    top: -53px;
+    left: -20px;
+    height: 70px;
+    width: 7px;
+    background: #16FFDB;
+
+    opacity: 0;
+    visibility:hidden;
+    transition:.5s;
+}
+
+.single-expert-padding:after{
+    left: auto;
+    right: -20px;
+    width: 70px;
+    height: 7px;
+    top: auto;
+    bottom: -20px;
+
+    opacity: 0;
+    visibility:hidden;
+    transition:.5s;
+
+}
+
+
+
+.single-expert:hover:before, .single-expert:hover:after{
+    opacity: 1;
+    visibility:visible;
+    transition:.5s;
+}  
+
+
+
+.single-expert:hover .single-expert-padding:before, 
+.single-expert:hover .single-expert-padding:after{
+    opacity: 1;
+    visibility:visible;
+    transition:.5s;
+} 
+
+/* our-expert-area css end*/ 
+
+
+.portfolio-list ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-list ul li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+}
